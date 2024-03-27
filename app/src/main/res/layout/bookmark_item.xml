@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/card_view_BookMark_news"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/search_card_view"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="5dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/image_view_BookMark_image"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon_app"/>
+            <TextView
+                android:id="@+id/tv_BookMark_title"
+                android:layout_width="130dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Missing Title"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+            <ImageButton
+                android:id="@+id/button_BookMarked_BookMark_page"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_bookmarked" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

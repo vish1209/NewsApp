@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/horizontal_news_cardView"
+        android:layout_width="190dp"
+        android:layout_height="110dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/image_view_headLine_image_horizontalScroll"
+            android:layout_width="190dp"
+            android:layout_height="110dp"
+            android:src="@drawable/icon_app"/>
+
+        <TextView
+            android:id="@+id/text_view_headLine_image_horizontalScroll"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:background="#80000000"
+            android:paddingTop="65dp"
+            android:text="Your Text Here"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <ImageButton
+            android:id="@+id/ImageButton_BookMark_headLine_image_horizontalScroll"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_horizontal_scroll_bookmark" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
