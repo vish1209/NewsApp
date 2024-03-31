@@ -10,7 +10,8 @@ import retrofit2.http.Query
 interface headlineapi {
 //3ad8a16aae514436b2178d0ce81d75d7
     //bdc75872219a4a3b9e0430d833ca356d
-    @GET("v2/top-headlines?country=in&apiKey=bdc75872219a4a3b9e0430d833ca356d")
+    //top-headlines?country=in&apiKey=bdc75872219a4a3b9e0430d833ca356d"
+    @GET("v2/everything?q=keyword&apiKey=3ad8a16aae514436b2178d0ce81d75d7")
     fun getHeadlinesHorizontalScroll() : Call<HeadLineData>
 
 

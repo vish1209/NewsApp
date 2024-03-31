@@ -172,9 +172,8 @@ class FragmentHomePage : Fragment(), HeadlineDetailInterface {
         val transformer= CompositePageTransformer()
         transformer.addTransformer(MarginPageTransformer(40))
         transformer.addTransformer{page, position->
-            val r=1-abs(position)
-            page.scaleY=1f + r * 0.2f
-            page.scaleX=1.3f +r *0.2f
+            page.scaleY=1.2f
+            page.scaleX=1.5f
         }
         recycler_view_headLines_horizontalScroll.setPageTransformer(transformer)
     }

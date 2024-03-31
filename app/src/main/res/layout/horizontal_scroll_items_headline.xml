@@ -8,8 +8,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/horizontal_news_cardView"
-        android:layout_width="190dp"
-        android:layout_height="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:cardElevation="4dp"
         app:cardCornerRadius="20dp"
         android:layout_marginStart="10dp"
